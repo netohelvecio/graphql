@@ -13,6 +13,7 @@ export const queries = {
 export const mutations = {
   saveComment: {
     type: CommentType,
+    resolve: saveComment,
     args: {
       input: {
         type: new GraphQLInputObjectType({
@@ -28,6 +29,5 @@ export const mutations = {
         }),
       },
     },
-    resolve: saveComment,
   },
 };

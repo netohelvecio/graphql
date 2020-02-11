@@ -13,10 +13,10 @@ export default new GraphQLObjectType({
     content: {
       type: GraphQLNonNull(GraphQLString),
     },
-    cratedAt: {
+    createdAt: {
       type: GraphQLNonNull(GraphQLDateTime),
     },
-    updateAt: {
+    updatedAt: {
       type: GraphQLNonNull(GraphQLDateTime),
     },
   },
